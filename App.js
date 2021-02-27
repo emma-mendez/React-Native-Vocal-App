@@ -46,12 +46,12 @@ console.log("Apped  Up & Running");
       </TouchableNativeFeedback>
        <Button 
         color='black'
-        onPress={() => Alert.alert('No User Found, Please Contact Admin')}
+        onPress={() => Alert.alert("Restricted Access", "Please Contact Emma Mendez Administrator")}
         title= 'Log In'
         />
         <Button 
         color='black'
-        onPress={() => Alert.alert('No User Found, Please Contact Admin')}
+        onPress={() => Alert.alert("Restricted Access", "Please Contact Emma Mendez Administrator")}
         title= 'Sign Up'
         />
       <StatusBar style="auto" />
