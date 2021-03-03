@@ -23,12 +23,16 @@ const styles = StyleSheet.create({
     loginButton: {
         width: '100%',
         height: 70,
-        backgroundColor: 'orange'
+        backgroundColor: 'orange',
+        bottom: 100,
+
     },
     registerButton: {
         width: '100%',
         height: 70,
-        backgroundColor: 'orange'
+        backgroundColor: 'orange',
+        bottom: 260,
+
         
     },
     logo: {
