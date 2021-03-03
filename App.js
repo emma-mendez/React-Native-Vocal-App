@@ -9,24 +9,6 @@ export default function App() {
 console.log("App  Up & Running");
 
   return (
-    // <SafeAreaView style={styles.container}>
-    //   <TouchableNativeFeedback onPress={() => console.log('Touched')}>
-    //   <Image 
-    //   style={styles.logo}
-    //   source={require('./assets/logo512.png')}/>
-    //   </TouchableNativeFeedback>
-    //    <Button 
-    //     color='black'
-    //     onPress={() => Alert.alert("Restricted Access", "Please Contact Emma Mendez Administrator")}
-    //     title= 'Log In'
-    //     />
-    //     <Button 
-    //     color='black'
-    //     onPress={() => Alert.alert("Restricted Access", "Please Contact Emma Mendez Administrator")}
-    //     title= 'Sign Up'
-    //     />
-    //   <StatusBar style="auto" />
-    // </SafeAreaView>
     <WelcomeScreen />
   );
 }
