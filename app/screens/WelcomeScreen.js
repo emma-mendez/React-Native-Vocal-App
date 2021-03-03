@@ -37,7 +37,6 @@ const styles = StyleSheet.create({
         borderRadius: 20,
     },
     registerButton: {
-        // width: '100%',
         height: 70,
         backgroundColor: 'orange',
         bottom: 100,
