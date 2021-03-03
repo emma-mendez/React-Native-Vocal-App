@@ -5,7 +5,7 @@ import { StyleSheet, Image, SafeAreaView, Button, TouchableNativeFeedback, Alert
 
 
 export default function App() {
-console.log("Apped  Up & Running");
+console.log("App  Up & Running");
 
 
 // const handlePress = 
