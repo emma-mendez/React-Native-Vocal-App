@@ -4,7 +4,7 @@ import WelcomeScreen from './app/screens/WelcomeScreen';
 
 
 export default function App() {
-console.log("App  Up & Running");
+console.log("App Up & Running");
 
   return (
     <WelcomeScreen/>
