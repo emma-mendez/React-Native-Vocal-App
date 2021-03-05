@@ -10,6 +10,10 @@ function WelcomeScreen() {
           style={styles.logo}
           source={require("../assets/logo512.png")} />
           <View>
+          <Button disabled block 
+          style={styles.startButton}>
+              <Text>Start</Text>
+          </Button>
           <Button  disabled block
           style={styles.registerButton}>
               <Text>Login</Text>
@@ -33,15 +37,21 @@ const styles = StyleSheet.create({
         width: 200,
         height: 70,
         backgroundColor: 'orange',
-        bottom: 260,
+        bottom: 90,
         borderRadius: 20,
     },
     registerButton: {
         height: 70,
         backgroundColor: 'orange',
-        bottom: 100,
+        bottom: 110,
         borderRadius: 20,
-       
+    },
+    startButton: {
+        height: 70,
+        backgroundColor: 'orange',
+        bottom: 130,
+        borderRadius: 20,
+
     },
     logo: {
         width: 200,
