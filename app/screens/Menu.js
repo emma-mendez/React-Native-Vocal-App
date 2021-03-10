@@ -6,8 +6,6 @@ import { Actions } from 'react-native-router-flux';
 export default class pageOne extends Component {
   
   render(){
-
-    Actions.ACTION_NAME(PARAMS)
     
     return(
       <Container>
@@ -27,7 +25,7 @@ export default class pageOne extends Component {
             </CardItem>
           </Card>
           <Button dark bordered style = {{alignSelf: 'center', margin: 30}}
-            onPress= {() => {Actions.Menu(); }}>
+            onPress= {() => {Actions.Menu2(); }}>
             <Text>Go to Page 2</Text>
           </Button>
          </Content>

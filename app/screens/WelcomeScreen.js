@@ -1,10 +1,10 @@
 import React from 'react';
 import { Image, ImageBackground, StyleSheet, View } from 'react-native';
 import { Button, Text } from 'native-base';
-import { Actions } from 'react-native-router-flux';
 
 
 function WelcomeScreen() {
+    
     return (
     <ImageBackground 
       style={styles.background}>
