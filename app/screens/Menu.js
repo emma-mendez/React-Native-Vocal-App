@@ -3,7 +3,7 @@ import { Container, Content, Text, Card, Header, Body, Button, Title, CardItem }
 import { Actions } from 'react-native-router-flux';
 
 
-export default class pageOne extends Component {
+export default class WelcomeScreen extends Component {
   
   render(){
     
@@ -24,9 +24,17 @@ export default class pageOne extends Component {
               </Body>
             </CardItem>
           </Card>
-          <Button dark bordered style = {{alignSelf: 'center', margin: 30}}
+          <Button dark bordered style = {{aligniSelf: 'center', margin: 30}}
             onPress= {() => {Actions.Menu2(); }}>
-            <Text>Go to Page 2</Text>
+            <Text>Start</Text>
+          </Button>
+          <Button dark bordered style = {{aligniSelf: 'center', margin: 30}}
+            onPress= {() => {Actions.Menu2(); }}>
+            <Text>Login</Text>
+          </Button>
+          <Button dark bordered style = {{aligniSelf: 'center', margin: 30}}
+            onPress= {() => {Actions.Menu2(); }}>
+            <Text>Register</Text>
           </Button>
          </Content>
       </Container>
