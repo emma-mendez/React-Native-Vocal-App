@@ -24,6 +24,10 @@ export default class pageTwo extends Component {
             onPress= {() => {Actions.pop(); }}>
             <Text>Goto Page 1</Text>
          </Button>
+         <Button dark bordered style = {{alignSelf: 'center', margin: 30}}
+            onPress= {() => {Actions.Menu(); }}>
+            <Text>Log Out</Text>
+          </Button>
         </Content>
       </Container>
     );

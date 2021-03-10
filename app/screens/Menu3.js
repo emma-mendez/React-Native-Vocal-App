@@ -24,8 +24,12 @@ export default class pageOne extends Component {
             </CardItem>
           </Card>
           <Button dark bordered style = {{alignSelf: 'center', margin: 30}}
-            onPress= {() => {Actions.pageTwo(); }}>
+            onPress= {() => {Actions.Menu2(); }}>
             <Text>Goto Page 2</Text>
+          </Button>
+          <Button dark bordered style = {{alignSelf: 'center', margin: 30}}
+            onPress= {() => {Actions.Menu(); }}>
+            <Text>Log Out</Text>
           </Button>
          </Content>
       </Container>

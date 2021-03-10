@@ -28,7 +28,7 @@ export default class WelcomeScreen extends Component {
           </Button>
           <Button enable block
           style={styles.registerButton}
-            onPress= {() => {Actions.Menu4(); }}>
+            onPress= {() => {Actions.Menu2(); }}>
             <Text>Register</Text>
           </Button>
       </Container>
