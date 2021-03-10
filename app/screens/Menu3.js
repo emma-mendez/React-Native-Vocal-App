@@ -3,17 +3,14 @@ import { Container, Content, Text, Card, Header, Body, Button, Title, CardItem }
 import { Actions } from 'react-native-router-flux';
 
 
-export default class pageOne extends Component {
-  
-  render(){
 
-    Actions.ACTION_NAME(PARAMS)
-    
+export default class pageOne extends Component {
+  render(){
     return(
       <Container>
         <Header>
           <Body>
-            <Title>Menu</Title>
+            <Title>PageOne</Title>
           </Body>
         </Header>
         <Content padder>
@@ -27,8 +24,8 @@ export default class pageOne extends Component {
             </CardItem>
           </Card>
           <Button dark bordered style = {{alignSelf: 'center', margin: 30}}
-            onPress= {() => {Actions.Menu(); }}>
-            <Text>Go to Page 2</Text>
+            onPress= {() => {Actions.pageTwo(); }}>
+            <Text>Goto Page 2</Text>
           </Button>
          </Content>
       </Container>

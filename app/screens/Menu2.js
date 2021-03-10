@@ -1,19 +1,13 @@
 import React, { Component } from 'react';
 import { Container, Content, Text, Card, Header, Body, Button, Title, CardItem } from 'native-base';
 import { Actions } from 'react-native-router-flux';
-
-
-export default class pageOne extends Component {
-  
+export default class pageTwo extends Component {
   render(){
-
-    Actions.ACTION_NAME(PARAMS)
-    
     return(
       <Container>
         <Header>
           <Body>
-            <Title>Menu</Title>
+            <Title>PageTwo</Title>
           </Body>
         </Header>
         <Content padder>
@@ -26,11 +20,11 @@ export default class pageOne extends Component {
               </Body>
             </CardItem>
           </Card>
-          <Button dark bordered style = {{alignSelf: 'center', margin: 30}}
-            onPress= {() => {Actions.Menu(); }}>
-            <Text>Go to Page 2</Text>
-          </Button>
-         </Content>
+          <Button dark bordered
+            onPress= {() => {Actions.pop(); }}>
+            <Text>Goto Page 1</Text>
+         </Button>
+        </Content>
       </Container>
     );
   }

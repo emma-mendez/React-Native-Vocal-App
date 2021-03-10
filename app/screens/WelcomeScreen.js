@@ -1,6 +1,8 @@
 import React from 'react';
 import { Image, ImageBackground, StyleSheet, View } from 'react-native';
 import { Button, Text } from 'native-base';
+import { Actions } from 'react-native-router-flux';
+
 
 function WelcomeScreen() {
     return (
@@ -11,7 +13,8 @@ function WelcomeScreen() {
           source={require("../assets/logo512.png")} />
           <View>
           <Button disabled block 
-          style={styles.startButton}>
+          style={styles.startButton}
+          onPress= {() => {Actions.Menu(); }}>
               <Text>Start</Text>
           </Button>
           <Button  disabled block
@@ -37,19 +40,19 @@ const styles = StyleSheet.create({
         width: 200,
         height: 70,
         backgroundColor: 'orange',
-        bottom: 90,
+        bottom: 70,
         borderRadius: 20,
     },
     registerButton: {
         height: 70,
         backgroundColor: 'orange',
-        bottom: 110,
+        bottom: 90,
         borderRadius: 20,
     },
     startButton: {
         height: 70,
         backgroundColor: 'orange',
-        bottom: 130,
+        bottom: 110,
         borderRadius: 20,
 
     },
