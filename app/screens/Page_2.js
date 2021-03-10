@@ -23,7 +23,7 @@ export default class Page_2 extends Component {
          </Button>
          <Button enable block 
           style={styles.exitButton}
-          onPress= {() => {Actions.pop(); }}>
+          onPress= {() => {Actions.Welcome(); }}>
             <Text>Exit</Text>
           </Button>
           <Button enable block 

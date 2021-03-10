@@ -13,7 +13,7 @@ export default class App extends Component {
     return (
       <Router hideNavBar= "true">
         <Scene key="Root" >
-          <Scene key="lastWelcome" component={Menu} title="Welcome" />
+          <Scene key="Welcome" component={Menu} title="Welcome" />
           <Scene key="Page_2" component={Page_2} title="Page 2" />
           <Scene key="Page_3" component={Page_3} title="Page 3" />
           <Scene key="Last" component={Last} title="Final Page" />
