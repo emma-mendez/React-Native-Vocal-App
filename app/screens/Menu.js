@@ -16,7 +16,7 @@ export default class WelcomeScreen extends Component {
           style={styles.logo}
           source={require("../assets/logo512.png")} />
           </ImageBackground>
-          <Button enable block 
+          <Button success enable block 
           style={styles.startButton}
             onPress= {() => {Actions.Page_2(); }}>
             <Text>Start</Text>

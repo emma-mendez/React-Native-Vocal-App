@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useRef } from 'react';
 import { Router, Scene } from 'react-native-router-flux';
 import Menu from './app/screens/Menu';
 import Page_2 from './app/screens/Page_2';
@@ -10,7 +10,9 @@ import Confidence from './app/screens/Confidence';
 import Journal from './app/screens/Journal';
 import Statistics from './app/screens/Statistics';
 import Zing from './app/screens/Zing';
-
+import * as tf from "@tensorflow/tfjs";
+import * as facemesh from "@tensorflow-models/facemesh";
+import Webcam from "react-webcam";
 
 export default class App extends Component {
   
