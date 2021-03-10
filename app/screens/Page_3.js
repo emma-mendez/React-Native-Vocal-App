@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Content, Text, Card, Header, Body, Button, Title, CardItem } from 'native-base';
+import { Container, Content, Text, Card, Header, Body, Button, Title, CardItem, Left, Right } from 'native-base';
 import { Actions } from 'react-native-router-flux';
 import { Image, ImageBackground, StyleSheet, View } from 'react-native';
 
@@ -21,16 +21,21 @@ export default class Page_3 extends Component {
             onPress= {() => {Actions.Confidence(); }}>
             <Text>Confidence</Text>
          </Button>
-         <Button enable block 
+        <Left>
+         <Button enable block  
           style={styles.exitButton}
           onPress= {() => {Actions.pop(); }}>
             <Text>Back</Text>
           </Button>
-          <Button enable block 
+          </Left>
+          <Right>
+          <Button enable block  
+          iconRight
           style={styles.nextButton}
           onPress= {() => {Actions.Last(); }}>
             <Text>Next</Text>
           </Button>
+          </Right>
          <Button enable block 
           style={styles.studioButton}
           onPress= {() => {Actions.Journal(); }}>

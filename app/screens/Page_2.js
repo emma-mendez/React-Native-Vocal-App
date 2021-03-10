@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Content, Text, Card, Header, Body, Button, Title, CardItem } from 'native-base';
+import { Container, Content, Text, Card, Header, Body, Button, Title, CardItem, Left, Right} from 'native-base';
 import { Actions } from 'react-native-router-flux';
 import { Image, ImageBackground, StyleSheet, View } from 'react-native';
 
@@ -21,16 +21,20 @@ export default class Page_2 extends Component {
             onPress= {() => {Actions.Sing(); }}>
             <Text>Sing</Text>
          </Button>
+         <Left>
          <Button enable block 
           style={styles.exitButton}
           onPress= {() => {Actions.Welcome(); }}>
             <Text>Exit</Text>
           </Button>
+          </Left>
+          <Right>
           <Button enable block 
           style={styles.nextButton}
           onPress= {() => {Actions.Page_3(); }}>
             <Text>Next</Text>
           </Button>
+          </Right>
          <Button enable block 
           style={styles.studioButton}
           onPress= {() => {Actions.Zing(); }}>

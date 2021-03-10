@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Content, Text, Card, Header, Body, Button, Title, CardItem } from 'native-base';
+import { Container, Content, Text, Card, Header, Body, Button, Title, CardItem, Left, Right } from 'native-base';
 import { Actions } from 'react-native-router-flux';
 import { Image, ImageBackground, StyleSheet, View } from 'react-native';
 
@@ -21,16 +21,20 @@ export default class LastPage extends Component {
             onPress= {() => {Actions.Statistics(); }}>
             <Text>Statistics</Text>
          </Button>
+         <Left>
          <Button enable block 
           style={styles.exitButton}
           onPress= {() => {Actions.pop(); }}>
             <Text>Back</Text>
           </Button>
+          </Left>
+          <Right>
           <Button enable block 
           style={styles.nextButton}
           onPress= {() => {Actions.Page_2(); }}>
             <Text>Next</Text>
           </Button>
+          </Right>
          <Button enable block 
           style={styles.studioButton}
           onPress= {() => {Actions.Zing(); }}>
