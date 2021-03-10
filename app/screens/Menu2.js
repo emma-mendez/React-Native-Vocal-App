@@ -20,7 +20,7 @@ export default class pageTwo extends Component {
          </Button>
          <Button enable block 
           style={styles.exitButton}
-          onPress= {() => {Actions.Menu(); }}>
+          onPress= {() => {Actions.pop(); }}>
             <Text>Exit</Text>
           </Button>
           <Button enable block 
