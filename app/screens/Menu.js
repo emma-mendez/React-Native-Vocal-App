@@ -18,7 +18,7 @@ export default class WelcomeScreen extends Component {
           </ImageBackground>
           <Button enable block 
           style={styles.startButton}
-            onPress= {() => {Actions.Menu2(); }}>
+            onPress= {() => {Actions.Page_2(); }}>
             <Text>Start</Text>
           </Button>
           <Button enable block

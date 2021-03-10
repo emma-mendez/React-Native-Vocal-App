@@ -6,17 +6,20 @@ import { Image, ImageBackground, StyleSheet, View } from 'react-native';
 
 
 
-export default class pageTwo extends Component {
+export default class LastPage extends Component {
   render(){
     return(
       <Container>
-        <Header>
-          
-        </Header>
+        <ImageBackground 
+      style={styles.background}>
+          <Image
+          style={styles.logo}
+          source={require("../assets/logo512.png")} />
+          </ImageBackground>
           <Button enable block 
           style={styles.singButton}
             onPress= {() => {Actions.pop(); }}>
-            <Text>Confidence</Text>
+            <Text>Statistics</Text>
          </Button>
          <Button enable block 
           style={styles.exitButton}
@@ -25,13 +28,13 @@ export default class pageTwo extends Component {
           </Button>
           <Button enable block 
           style={styles.nextButton}
-          onPress= {() => {Actions.Menu4(); }}>
+          onPress= {() => {Actions.Page_2(); }}>
             <Text>Next</Text>
           </Button>
          <Button enable block 
           style={styles.studioButton}
-          onPress= {() => {Actions.Menu(); }}>
-            <Text>Journal</Text>
+          onPress= {() => {Actions.Menu2(); }}>
+            <Text>Zing</Text>
           </Button>
       </Container>
     );
@@ -49,10 +52,11 @@ const styles = StyleSheet.create({
       margin: 40,
       height: 70,
       backgroundColor: 'orange',
-      bottom: 0,
+      top: -50,
       borderRadius: 20,
   },
   exitButton: {
+    top: -50,
       margin: 10,
       height: 30,
       width: 100,
@@ -61,6 +65,7 @@ const styles = StyleSheet.create({
       borderRadius: 20,
   },
   nextButton: {
+    top: -50,
       margin: 10,
       height: 30,
       width: 100,
@@ -70,6 +75,7 @@ const styles = StyleSheet.create({
 
   },
   studioButton: {
+    top: -50,
     margin: 40,
     height: 70,
     backgroundColor: 'orange',
@@ -78,10 +84,10 @@ const styles = StyleSheet.create({
 
 },
   logo: {
-      width: 200,
-      height: 200,
-      position: 'absolute',
-      top: 70,
+    width: 150,
+    height: 150,
+    position: 'absolute',
+    top: 10,
   },
   
 })
