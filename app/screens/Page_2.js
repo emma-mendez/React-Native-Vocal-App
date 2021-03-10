@@ -18,7 +18,7 @@ export default class Page_2 extends Component {
           </ImageBackground>
           <Button enable block 
           style={styles.singButton}
-            onPress= {() => {Actions.pop(); }}>
+            onPress= {() => {Actions.Sing(); }}>
             <Text>Sing</Text>
          </Button>
          <Button enable block 
@@ -33,8 +33,8 @@ export default class Page_2 extends Component {
           </Button>
          <Button enable block 
           style={styles.studioButton}
-          onPress= {() => {Actions.Menu(); }}>
-            <Text>Studio</Text>
+          onPress= {() => {Actions.Zing(); }}>
+            <Text>Zing</Text>
           </Button>
       </Container>
     );

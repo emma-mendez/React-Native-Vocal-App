@@ -1,12 +1,14 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 
-export default function Journal() {
+const Sing = () => {
     return (
         <View>
-            <Text>Journal</Text>
+            <Text>Sing</Text>
         </View>
     )
 }
+
+export default Sing
 
 const styles = StyleSheet.create({})

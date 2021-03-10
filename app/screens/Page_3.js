@@ -33,8 +33,8 @@ export default class Page_3 extends Component {
           </Button>
          <Button enable block 
           style={styles.studioButton}
-          onPress= {() => {Actions.Menu(); }}>
-            <Text>Journal</Text>
+          onPress= {() => {Actions.Journal(); }}>
+            <Text>Journal / Lyrics</Text>
           </Button>
       </Container>
     );

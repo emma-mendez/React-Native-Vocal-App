@@ -18,7 +18,7 @@ export default class LastPage extends Component {
           </ImageBackground>
           <Button enable block 
           style={styles.singButton}
-            onPress= {() => {Actions.pop(); }}>
+            onPress= {() => {Actions.Statistics(); }}>
             <Text>Statistics</Text>
          </Button>
          <Button enable block 
@@ -33,8 +33,8 @@ export default class LastPage extends Component {
           </Button>
          <Button enable block 
           style={styles.studioButton}
-          onPress= {() => {Actions.Menu2(); }}>
-            <Text>Zing</Text>
+          onPress= {() => {Actions.Zing(); }}>
+            <Text>Studio</Text>
           </Button>
       </Container>
     );

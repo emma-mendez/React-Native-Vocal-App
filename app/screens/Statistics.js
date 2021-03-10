@@ -1,10 +1,10 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 
-export default function Journal() {
+export default function Statistics() {
     return (
         <View>
-            <Text>Journal</Text>
+            <Text>Statistics</Text>
         </View>
     )
 }
