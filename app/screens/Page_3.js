@@ -18,7 +18,7 @@ export default class Page_3 extends Component {
         </ImageBackground>
           <Button enable block 
           style={styles.singButton}
-            onPress= {() => {Actions.pop(); }}>
+            onPress= {() => {Actions.Confidence(); }}>
             <Text>Confidence</Text>
          </Button>
          <Button enable block 
