@@ -23,16 +23,16 @@ export default class Page_2 extends Component {
          </Button>
          <Left>
          <Button enable block 
-          style={styles.exitButton}
-          onPress= {() => {Actions.Welcome(); }}>
-            <Text>Exit</Text>
+          style={styles.nextButton}
+          onPress= {() => {Actions.Page_3(); }}>
+            <Text>Next</Text>
           </Button>
           </Left>
           <Right>
           <Button enable block 
-          style={styles.nextButton}
-          onPress= {() => {Actions.Page_3(); }}>
-            <Text>Next</Text>
+          style={styles.exitButton}
+          onPress= {() => {Actions.Welcome(); }}>
+            <Text>Exit</Text>
           </Button>
           </Right>
          <Button enable block 
@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
       borderRadius: 20,
   },
   exitButton: {
-    top: 70,
+    top: 10,
       margin: 10,
       height: 30,
       width: 70,
@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
       borderRadius: 20,
   },
   nextButton: {
-    top: 10,
+    top: 70,
       margin: 10,
       height: 30,
       width: 70,

@@ -24,20 +24,20 @@ export default class LastPage extends Component {
          <Left>
          <Button enable block 
           style={styles.exitButton}
-          onPress= {() => {Actions.pop(); }}>
-            <Text>Back</Text>
+          onPress= {() => {Actions.Page_2(); }}>
+            <Text>Next</Text>
           </Button>
           </Left>
           <Right>
           <Button enable block 
           style={styles.nextButton}
-          onPress= {() => {Actions.Page_2(); }}>
-            <Text>Next</Text>
+          onPress= {() => {Actions.pop(); }}>
+            <Text>Back</Text>
           </Button>
           </Right>
          <Button enable block 
           style={styles.studioButton}
-          onPress= {() => {Actions.Zing(); }}>
+          onPress= {() => {Actions.Studio(); }}>
             <Text>Studio</Text>
           </Button>
       </Container>
@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
       margin: 10,
       height: 30,
       width: 70,
-      backgroundColor: 'orange',
+      backgroundColor: 'grey',
       bottom: 0,
       borderRadius: 20,
 

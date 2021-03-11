@@ -24,16 +24,16 @@ export default class Page_3 extends Component {
         <Left>
          <Button enable block  
           style={styles.exitButton}
-          onPress= {() => {Actions.pop(); }}>
-            <Text>Back</Text>
+          onPress= {() => {Actions.Last(); }}>
+            <Text>Next</Text>
           </Button>
           </Left>
           <Right>
           <Button enable block  
           iconRight
           style={styles.nextButton}
-          onPress= {() => {Actions.Last(); }}>
-            <Text>Next</Text>
+          onPress= {() => {Actions.pop(); }}>
+            <Text>Back</Text>
           </Button>
           </Right>
          <Button enable block 
@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
       margin: 10,
       height: 30,
       width: 70,
-      backgroundColor: 'orange',
+      backgroundColor: 'grey',
       bottom: 0,
       borderRadius: 20,
 
