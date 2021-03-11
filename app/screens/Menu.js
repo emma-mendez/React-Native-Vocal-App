@@ -46,27 +46,32 @@ const styles = StyleSheet.create({
   registerButton: {
       height: 70,
       backgroundColor: 'orange',
-      bottom: 70,
+      bottom: 90,
       borderRadius: 20,
+      margin: 80,
   },
   loginButton: {
       height: 70,
       backgroundColor: 'orange',
-      bottom: 90,
+      bottom: -50,
       borderRadius: 20,
+      margin: 80,
+
   },
   startButton: {
       height: 70,
       backgroundColor: 'orange',
-      bottom: 110,
+      bottom: -190,
       borderRadius: 20,
+      margin: 80,
+
 
   },
   logo: {
       width: 200,
       height: 200,
       position: 'absolute',
-      top: 70,
+      top: 40,
   },
   
 })
