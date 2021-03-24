@@ -51,8 +51,8 @@ const styles = StyleSheet.create({
       margin: 80,
   },
   loginButton: {
-      height: 60,
-      backgroundColor: 'orange',
+      height: 70,
+      backgroundColor: 'pink',
       bottom: -50,
       borderRadius: 20,
       margin: 80,
