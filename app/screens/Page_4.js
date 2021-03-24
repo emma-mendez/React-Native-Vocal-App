@@ -6,41 +6,36 @@ import { Image, ImageBackground, StyleSheet, View } from 'react-native';
 
 
 
-export default class Page_3 extends Component {
+export default class Page_4 extends Component {
   render(){
     return(
       <Container>
-      <ImageBackground 
+      <ImageBackground
     style={styles.background}>
         <Image
         style={styles.logo}
         source={require("../assets/logo512.png")} />
         </ImageBackground>
-          <Button enable block 
+          <Button enable block
           style={styles.singButton}
-            onPress= {() => {Actions.Confidence(); }}>
-            <Text>Confidence</Text>
+            onPress= {() => {Actions.Record(); }}>
+            <Text>Record</Text>
          </Button>
         <Left>
-         <Button enable block  
+         <Button enable block
           style={styles.exitButton}
-          onPress= {() => {Actions.Page_4();}}>
+          onPress= {() => {Actions.Last(); }}>
             <Text>Next</Text>
           </Button>
           </Left>
           <Right>
-          <Button enable block  
+          <Button enable block
           iconRight
           style={styles.nextButton}
           onPress= {() => {Actions.pop(); }}>
             <Text>Back</Text>
           </Button>
           </Right>
-         <Button enable block 
-          style={styles.studioButton}
-          onPress= {() => {Actions.Journal(); }}>
-            <Text>Journal / Lyrics</Text>
-          </Button>
       </Container>
     );
   }
@@ -95,5 +90,5 @@ const styles = StyleSheet.create({
     position: 'absolute',
     top: 10,
   },
-  
+
 })
