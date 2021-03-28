@@ -4,7 +4,11 @@ import Task from '../components/Task';
 
 export default function ToDo() {
     const [task, setTask] = useState();
-    
+
+    const handleAddTask = () => {
+        console.log(task);
+    }
+
     return (
         <View stle={styles.container}>
 
@@ -21,9 +25,9 @@ export default function ToDo() {
         <KeyboardAvoidingView
         behavior={Platform.OS === "ios" ? "padding" : "height"}
         style={styles.writeTaskManager}>
-            <TextInput style={styles.input} placeholder={'write a task'}></TextInput>
+            <TextInput style={styles.input} placeholder={'write a task'} value={task} onChangeText={text => setTask(text)}></TextInput>
         
-        <TouchableOpacity >
+        <TouchableOpacity onPress={() =>handleAddTask()}>
             <View style={styles.addWrapper}>
                 <Text style={styles.addText}>+</Text>
             </View>
