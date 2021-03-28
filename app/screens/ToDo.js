@@ -1,18 +1,12 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { StyleSheet, Text, View } from 'react-native'
 
-export default class ToDo() {
+export default function ToDo() {
     return (
-        <View style={styles.container}>
-
-                {/* Todays Tasks */}
-            <View style={styles.taskWrapper}>  
-                <Text style={styles.sectionTitle}>Todays Task</Text>
-            <View style={styles.items}>
-                {/* this is where tasks go */}
-            </View>
-            </View>
+        <View>
+            <Text>To Do</Text>
         </View>
     )
 }
 
+const styles = StyleSheet.create({})

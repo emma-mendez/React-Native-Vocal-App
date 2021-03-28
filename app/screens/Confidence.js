@@ -28,7 +28,7 @@ export default class Page_4 extends Component {
          </Button>
           <Button enable block
           style={styles.toDoButton}
-            onPress= {() => {Actions.Record(); }}>
+            onPress= {() => {Actions.ToDo(); }}>
             <Text>To Do List</Text>
          </Button>
          <Button enable block
