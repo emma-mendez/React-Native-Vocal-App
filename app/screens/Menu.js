@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Container, Content, Text, Card, Header, Body, Button, Title, CardItem } from 'native-base';
-import { Image, ImageBackground, StyleSheet, View } from 'react-native';
+import { Container, Text, Button } from 'native-base';
+import { Image, ImageBackground, StyleSheet } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 
 
