@@ -8,15 +8,13 @@ export default function ToDo() {
 
             {/* Todays Tasks */}
         <View style={styles.taskWrapper}>
+        <Text>Todays Task</Text>
             <Text style={styles.sectionTitle}></Text>
-            <Task />
+            <Task text={'Task 1'}/>
+            <Task text={'Task 2'}/>
         <View style={styles.Items}>
-
         </View>
-        
         </View>
-
-            <Text>Todays Task</Text>
         </View>
     )
 }
