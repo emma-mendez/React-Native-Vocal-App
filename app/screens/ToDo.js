@@ -8,8 +8,7 @@ export default function ToDo() {
 
             {/* Todays Tasks */}
         <View style={styles.taskWrapper}>
-        <Text>Todays Task</Text>
-            <Text style={styles.sectionTitle}></Text>
+            <Text style={styles.sectionTitle}>Todays Task</Text>
             <Task text={'Task 1'}/>
             <Task text={'Task 2'}/>
         <View style={styles.Items}>
@@ -25,13 +24,16 @@ container:{
     backgroundColor: '#E8EAED',
 },
 taskWrapper: {
-    paddingTop: 80,
+    paddingTop: 20,
     paddingHorizontal: 20,
 },
 sectionTitle:{
+    marginBottom: 30,
     fontSize: 24,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
 
 },
-Items:{},
+Items:{
+    marginTop: 30,
+},
 });
