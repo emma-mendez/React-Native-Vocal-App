@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Container, Text, Button } from 'native-base';
 import { Actions } from 'react-native-router-flux';
 import { Image, ImageBackground, StyleSheet } from 'react-native';
+import { booleanMaskAsync } from '@tensorflow/tfjs';
 
 
 
@@ -33,7 +34,7 @@ export default class Page_4 extends Component {
          </Button>
          <Button enable block
           style={styles.closeButton}
-            onPress= {() => {Actions.Record(); }}>
+            onPress= {() => {Actions.Page_3(); }}>
             <Text>Close</Text>
          </Button>
       </Container>
@@ -75,7 +76,7 @@ const styles = StyleSheet.create({
     top: 3,
     margin: 40,
     height: 70,
-    backgroundColor: 'orange',
+    backgroundColor: 'grey',
     bottom: 0,
     borderRadius: 20,
 
