@@ -32,7 +32,7 @@ export default class Page_3 extends Component {
           <Button enable block  
           iconRight
           style={styles.nextButton}
-          onPress= {() => {Actions.pop(); }}>
+          onPress= {() => {Actions.Page_2(); }}>
             <Text>Back</Text>
           </Button>
           </Right>

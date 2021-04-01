@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Content, Text, Card, Header, Body, Button, Title, CardItem, Left, Right } from 'native-base';
+import { Container, Text, Button, Title, CardItem, Left, Right } from 'native-base';
 import { Actions } from 'react-native-router-flux';
 import { Image, ImageBackground, StyleSheet, View } from 'react-native';
 

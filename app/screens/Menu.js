@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Container, Content, Text, Card, Header, Body, Button, Title, CardItem } from 'native-base';
-import { Image, ImageBackground, StyleSheet, View } from 'react-native';
+import { Container, Text, Button } from 'native-base';
+import { Image, ImageBackground, StyleSheet } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 
 
@@ -51,8 +51,8 @@ const styles = StyleSheet.create({
       margin: 80,
   },
   loginButton: {
-      height: 60,
-      backgroundColor: 'orange',
+      height: 70,
+      backgroundColor: 'pink',
       bottom: -50,
       borderRadius: 20,
       margin: 80,
