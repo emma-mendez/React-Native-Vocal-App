@@ -38,7 +38,7 @@ export default class Page_2 extends Component {
          <Button enable block 
           style={styles.studioButton}
           onPress= {() => {Actions.Zing(); }}>
-            <Text>Zing</Text>
+            <Text>Face Mesh</Text>
           </Button>
       </Container>
     );
