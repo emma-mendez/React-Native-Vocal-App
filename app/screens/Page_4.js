@@ -24,7 +24,7 @@ export default class Page_4 extends Component {
         <Left>
          <Button enable block
           style={styles.exitButton}
-          onPress= {() => {Actions.Last(); }}>
+          onPress= {() => {Actions.Page_2(); }}>
             <Text>Next</Text>
           </Button>
           </Left>
@@ -36,6 +36,11 @@ export default class Page_4 extends Component {
             <Text>Back</Text>
           </Button>
           </Right>
+          <Button enable block 
+          style={styles.studioButton}
+          onPress= {() => {Actions.Journal(); }}>
+            <Text>Vocal Warm Ups</Text>
+          </Button>
       </Container>
     );
   }
