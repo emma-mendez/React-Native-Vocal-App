@@ -12,6 +12,8 @@ import Journal from './app/screens/Journal';
 import Record from "./app/screens/Record";
 import Statistics from './app/screens/Statistics';
 import ToDo from './app/screens/ToDo';
+import CountDown from "./app/components/Countdown";
+import Meditation from "./app/screens/Meditation";
 import * as tf from "@tensorflow/tfjs";
 import * as facemesh from "@tensorflow-models/facemesh";
 import Webcam from "react-webcam";
@@ -36,6 +38,7 @@ export default class App extends Component {
           <Scene key="Statistics" component={Statistics} title="Statistics" />
           <Scene key="ToDo" component={ToDo} title="To Do" />
           <Scene key="Record" component={Record} title="Record" />
+          <Scene key="Meditation" component={Meditation} title="Meditation" />
         </Scene>
       </Router>
     )

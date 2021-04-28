@@ -36,6 +36,11 @@ export default class Page_4 extends Component {
             <Text>Back</Text>
           </Button>
           </Right>
+           <Button enable block
+          style={styles.studioButton}
+          onPress= {() => {Actions.Meditation(); }}>
+            <Text>Meditation/ Breathing Space</Text>
+          </Button>
       </Container>
     );
   }
